@@ -41,8 +41,12 @@ npm run dev
 
 ## Задание 3:
 - Сверстать страницы в соответствии с макетами [макет figma github](https://www.figma.com/design/GHVVL2Zuog2eYiJdDa2jBl/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%B1%D0%BE%D1%80?node-id=449-381&m=dev), [макет figma crypto](https://www.figma.com/design/GHVVL2Zuog2eYiJdDa2jBl/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%B1%D0%BE%D1%80?node-id=267-434&m=dev)
-- На главной странице появился MultiDropdown - можно выбирать, репозитории с какими языками показывать. Необходимо проверять по полю `language` в модели репозитория.
-- На странице с информацией о репозитории добавлено: 
-    - 4 параметра - `stargazers_count`, `watchers_count`, `forks_count`, `open_issues_count`;
-    - Раздел Contributions. Здесь отрисована активность в каждый день на протяжении года. Для запроса активности за год используйте [этот эндпоинт](https://docs.github.com/en/rest/metrics/statistics?apiVersion=2022-11-28#get-the-last-year-of-commit-activity);
-    - Раздел Contributors. Здесь отрисованы аватарки всех, кто принимает участие в ведении репозитория. Для получения данных используйте [этот эндпоинт](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repository-contributors).
+- Для проекта github:
+    - На главной странице появился MultiDropdown - можно выбирать, репозитории с какими языками показывать. Необходимо проверять по полю `language` в модели репозитория.
+    - На странице с информацией о репозитории добавлено: 
+        - 4 параметра - `stargazers_count`, `watchers_count`, `forks_count`, `open_issues_count`;
+        - Раздел Contributions. Здесь отрисована активность в каждый день на протяжении года. Для запроса активности за год используйте [этот эндпоинт](https://docs.github.com/en/rest/metrics/statistics?apiVersion=2022-11-28#get-the-last-year-of-commit-activity);
+        - Раздел Contributors. Здесь отрисованы аватарки всех, кто принимает участие в ведении репозитория. Для получения данных используйте [этот эндпоинт](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repository-contributors).
+- Для проекта crypto:
+    - На главной странице появился Dropdown - можно выбирать, в какой валюте показывать монеты;
+    - На странице с монетой появился график с возможностью выбора периода: 1 час, 1 день, 1 неделя, 1 месяц, 6 месяцев, 1 год, за все время.
