@@ -1,0 +1,258 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #e6edf3;
+    background-color: #0d1117;
+    min-height: 100vh;
+}
+
+.backButton {
+    display: inline-block;
+    margin-bottom: 24px;
+    padding: 8px 16px;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    color: #2f81f7;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    &:hover {
+        background-color: #1b222e;
+        text-decoration: none;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    h1 {
+        margin: 0;
+        font-size: 28px;
+        color: #e6edf3;
+    }
+}
+
+.externalLink {
+    padding: 8px 16px;
+    background-color: #238636;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    &:hover {
+        background-color: #2ea043;
+        text-decoration: none;
+    }
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 36px;
+    padding: 20px;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.statLabel {
+    font-weight: 600;
+    color: #8b949e;
+}
+
+.language {
+    background-color: #1f6feb;
+    color: #e6edf3;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.description {
+    h2 {
+        font-size: 20px;
+        margin-bottom: 16px;
+        color: #e6edf3;
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #8b949e;
+        background-color: #161b22;
+        padding: 20px;
+        border-radius: 6px;
+        border: 1px solid #30363d;
+    }
+}
+
+.section {
+    margin-top: 40px;
+    h2 {
+        font-size: 20px;
+        margin-bottom: 16px;
+        color: #e6edf3;
+    }
+}
+
+// Contributions Calendar
+.contributionsCalendar {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.calendarGrid {
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.week {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.day {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.emptyDay {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+}
+
+.lowActivity {
+    background-color: #0e4429;
+}
+
+.mediumActivity {
+    background-color: #26a641;
+}
+
+.highActivity {
+    background-color: #39d353;
+}
+
+.calendarLegend {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #8b949e;
+}
+
+.legendCells {
+    display: flex;
+    gap: 4px;
+}
+
+.legendCell {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+}
+
+// Contributors
+.contributors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.contributor {
+    transition: transform 0.2s;
+    &:hover {
+        transform: translateY(-4px);
+    }
+}
+
+.contributorAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #30363d;
+}
+
+// Loading State
+.loadingState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 16px;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    color: #2f81f7;
+}
+
+.spinner {
+    width: 30px;
+    height: 30px;
+    border: 3px solid rgba(47, 129, 247, 0.3);
+    border-radius: 50%;
+    border-top-color: #2f81f7;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.emptyState {
+    padding: 40px;
+    text-align: center;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    color: #8b949e;
+}
+
+.errorContainer {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #161b22;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    h2 {
+        margin-top: 0;
+        color: #f85149;
+    }
+    p {
+        margin-bottom: 24px;
+        color: #8b949e;
+    }
+}
