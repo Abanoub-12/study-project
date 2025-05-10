@@ -1,9 +1,9 @@
 @function rem($value) {
-  @return calc($value / 16) + rem;
+  @return calc($value / 16)+rem;
 }
 
 @function minus-rem($value) {
-  @return calc($value / 16 * (-1)) + rem;
+  @return calc($value / 16 * (-1))+rem;
 }
 
 @mixin hover {
@@ -60,4 +60,10 @@
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
